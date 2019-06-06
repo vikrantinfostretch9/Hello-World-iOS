@@ -14,7 +14,7 @@ steps:
   inputs:
     CopyRoot: '/Users/vsts/agent/2.150.3/work/1/s'
     ArtifactName: 'working'
-    ArtifactType: 'FilePath'
+    ArtifactType: 'Container'
 - task: Xcode@5
   inputs:
     actions: 'clean build'
