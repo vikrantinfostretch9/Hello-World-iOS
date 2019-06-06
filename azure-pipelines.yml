@@ -17,7 +17,7 @@ steps:
 - task: Xcode@5
   inputs:
     actions: 'clean build'
-    scheme: 'Hello World '
+    scheme: 'Hello World 5.0.1'
     sdk: 'iphoneos'
     configuration: 'Release'
     xcWorkspacePath: '**/*.xcodeproj/project.xcworkspace'
