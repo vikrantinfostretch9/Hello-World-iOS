@@ -18,3 +18,9 @@ steps:
     configuration: 'Debug'
     xcWorkspacePath: '**/*.xcodeproj/project.xcworkspace'
     xcodeVersion: 'default' # Options: 8, 9, 10, default, specifyPath
+
+- task: CopyPublishBuildArtifacts@1
+  inputs:
+    CopyRoot: '/Users/vsts/agent/2.150.3/work/1/s'
+    ArtifactName: 'working'
+    ArtifactType: 'FilePath'
