@@ -13,11 +13,12 @@ steps:
 - task: Bash@3
   inputs:
     targetType: 'inline'
-    script: 'xcodebuild -list'
+    script: 'xcodebuild -list
+      xcrun swift -version'
 - task: Xcode@5
   inputs:
     actions: 'clean build'
-    scheme: ' '
+    scheme: 'Hello World '
     sdk: 'iphoneos'
     configuration: 'Release'
     xcWorkspacePath: '**/*.xcodeproj/project.xcworkspace'
